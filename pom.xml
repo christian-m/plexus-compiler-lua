@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>plexus-compiler-lua</name>
+    <description>Plexus Compiler Integration for Lua</description>
+
+    <parent>
+        <groupId>org.codehaus.plexus</groupId>
+        <artifactId>plexus-compiler</artifactId>
+        <version>2.8.1</version>
+    </parent>
+
+    <groupId>net.matzat.plexus.compiler.lua</groupId>
+    <artifactId>plexus-compiler-lua</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <licenses>
+        <license>
+            <name>Apache License 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Christian Matzat</name>
+            <email>christian@matzat.net</email>
+            <roles>
+                <role>Project Lead</role>
+                <role>Developer</role>
+                <role>Release Manager</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.luaj</groupId>
+            <artifactId>luaj-jse</artifactId>
+            <version>2.0.3</version><!-- Lua 5.1 compatible -->
+            <!--<version>3.0.1</version>--><!-- Lua 5.2 compatible -->
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-compiler-api</artifactId>
+            <version>2.8.1</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <scm>
+        <connection>scm:git:ssh://git@github.com/christian-m/plexus-compiler-lua.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/christian-m/plexus-compiler-lua.git</developerConnection>
+        <url>https://github.com/christian-m/plexus-compiler-lua</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>oss-releases</id>
+            <name>OpenSource Releases</name>
+            <url>http://repo.matzat.net/content/repositories/oss-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>oss-snapshots</id>
+            <name>Open Source Snapshots</name>
+            <url>http://repo.matzat.net/content/repositories/oss-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>
