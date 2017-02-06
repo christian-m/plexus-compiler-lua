@@ -78,9 +78,9 @@
     </build>
 
     <scm>
-        <connection>scm:git:ssh://git@github.com/christian-m/plexus-compiler-lua.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/christian-m/plexus-compiler-lua.git</developerConnection>
-        <url>https://github.com/christian-m/plexus-compiler-lua</url>
+        <connection>scm:git:ssh://git@bitbucket.org/christian_m/plexus-compiler-lua.git</connection>
+        <developerConnection>scm:git:ssh://git@bitbucket.org/christian_m/plexus-compiler-lua.git</developerConnection>
+        <url>https://bitbucket.org/christian_m/plexus-compiler-lua</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -88,13 +88,18 @@
         <repository>
             <id>oss-releases</id>
             <name>OpenSource Releases</name>
-            <url>http://repo.matzat.net/content/repositories/oss-releases</url>
+            <url>https://repo.matzat.net/content/repositories/oss-releases</url>
         </repository>
         <snapshotRepository>
             <id>oss-snapshots</id>
             <name>Open Source Snapshots</name>
-            <url>http://repo.matzat.net/content/repositories/oss-snapshots</url>
+            <url>https://repo.matzat.net/content/repositories/oss-snapshots</url>
         </snapshotRepository>
     </distributionManagement>
+
+    <issueManagement>
+        <system>bitbucket</system>
+        <url>https://bitbucket.org/christian_m/plexus-compiler-lua/issues</url>
+    </issueManagement>
 
 </project>
